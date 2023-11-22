@@ -1,5 +1,4 @@
 class Figure():       
-
     def square(self):
         pass
 
