@@ -12,10 +12,10 @@ class Phone():
 
     # method that changes number
     def change_number(self, phone_number):
-        print (re.search(f'7-\d{3}-\d{5}', phone_number))
         # С помощью регулярки проверяем корректность номера
         if re.search('7-\d{3}-\d{5}', phone_number):
             self.__phone_number = phone_number
+            print(f'Новый номер {self.__phone_number}')
         else:
             print('Номер не являеться корректным телефонным номером')
 
